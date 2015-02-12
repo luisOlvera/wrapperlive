@@ -22,11 +22,16 @@ public class WordWrapTest {
 
     }
 
+    @Test
+    public void  StringVacio_resultadoStringVacio()throws Exception {
+
+        Assert.assertEquals("",wordWrap.wrapper("",1));
+    }
 
     @Test
-    public void  null_resultadoVacio()throws Exception {
+    public void  StringMenor_Prueba_width_10_resultadoPrueba()throws Exception {
 
-        Assert.assertEquals("",wordWrap.wrapper(null));
+        Assert.assertEquals("Prueba",wordWrap.wrapper("Prueba",10));
     }
 
 }

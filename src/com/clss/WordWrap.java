@@ -5,8 +5,8 @@ package com.clss;
  */
 public class WordWrap {
 
-    public String  wrapper (String cadena) {
+    public String  wrapper (String cadena , int width) {
 
-    return "";
+    return cadena;
     }
 }

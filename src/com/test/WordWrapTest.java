@@ -1,6 +1,7 @@
 package com.test;
 
 import com.clss.WordWrap;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -23,8 +24,9 @@ public class WordWrapTest {
 
 
     @Test
-    public void  noting()throws Exception {
+    public void  null_resultadoVacio()throws Exception {
 
+        Assert.assertEquals("",wordWrap.wrapper(null));
     }
 
 }
